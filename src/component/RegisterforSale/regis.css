@@ -1,0 +1,100 @@
+:root{
+    
+}
+.regis-bg{
+    display: block;
+    padding: 2% 20%;
+    background-color: #F4F2F0;
+}
+.regis-container{
+    padding: 3%;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+    font-family: 'Raleway', sans-serif;
+}
+.regis-item-title{
+    font-size: 30px;
+    margin: 8px 0;
+}
+.regis-pre{
+    margin: 8px 0;
+}
+.regis-form{
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.regis-form>input{
+    display: block;
+    width: 80%;
+    padding: 15px 10px;
+    border: 1px solid gray;
+}
+.regis-form>button{
+    display: block;
+    width: 18%;
+    background-color: black;
+    color: #BEBC6F;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    transition: all ease-in-out 0.4s;
+}
+.regis-form>button:hover{
+    cursor: pointer;
+    background-color:  #273751;
+}
+.regis-waning>a{
+    text-decoration: underline;
+}
+.mxh-list{
+    display: flex;
+    justify-content: space-around;
+    margin: 8px 0;
+    padding: 1% 20%;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.mxh-link{
+    color: gray;
+    font-size: 25px;
+    transition: all ease-in-out 0.4s;
+}
+.mxh-link:hover{
+    color: black;
+}
+/* Mobile Tablet */
+@media (max-width: 1023px) {
+   
+}
+  
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+  
+/* Mobile */
+@media (max-width: 739px) {
+    .regis-bg{
+        display: block;
+        padding: 2% 0%;
+    }
+    .regis-form{
+        margin: 8px 0;
+        display: block;
+    }
+    .regis-form>input{
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+    }
+    .regis-form>button{
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .mxh-list{
+        padding: 2% 20%; 
+    }
+}

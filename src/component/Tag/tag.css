@@ -1,0 +1,148 @@
+:root{
+    --event-height: 350px;
+}
+.tag-and-banner{
+    margin: 16px 0;
+}
+.tag-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+.tag-item{
+    display: block;
+    width: 20%;
+    background-color: black;
+    text-align: center;
+    margin: 8px;
+}
+.tag-item:hover{
+    background-color: #273751;
+}
+.tag-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #BEBC6F;
+    padding: 13px 0px;
+    border-radius: 2px;
+}
+.event{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: var(--event-height);
+    overflow: hidden;
+}
+.event-link{
+    display: block;
+    height: 100%;
+    position: relative;
+}
+.event-on-pc{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.event-on-mobile{
+    display: none;
+}
+.event-info{
+    display: block;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+}
+.event-title{
+    font-size: 25px;
+    margin: 8px 0;
+}
+.event-dre{
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 8px 0;
+    margin-bottom: 32px;
+}
+.btn-event{
+    background-color: black;
+    color: #BEBC6F;
+    padding: 6px 30px;
+}
+.btn-event:hover{
+    background-color: #273751;
+}
+/* Mobile Tablet */
+@media (max-width: 1023px) {
+    .tag-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .tag-item{
+        display: block;
+        width: 45%;
+        background-color: black;
+        text-align: center;
+        margin: 8px;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 740px) and (max-width: 1023px) {
+    .event-info{
+        position: absolute;
+        top: 25%;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 739px) {
+        :root{
+            --event-height: 400px;
+        }
+        .event{
+            display: block;
+            width: 100%;
+        }
+        .event-on-pc{
+            display: none;
+        }
+        .event-on-mobile{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .event-info{
+            display: block;
+            height: 30%;
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            right: 10%;
+            bottom: 0;
+            background-color: #AEF4D9 ;
+            padding: 8px;
+        }
+        .event-title{
+            font-size: 20px;
+            margin: 0px 0;
+        }
+        .event-dre{
+            font-size: 20px;
+            font-weight: bolder;
+            margin: 8px 0;
+            margin-bottom: 16px;
+        }
+        .btn-event{
+            background-color: black;
+            color: #BEBC6F;
+            padding: 6px 30px;
+        }
+  }

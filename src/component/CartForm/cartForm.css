@@ -1,0 +1,142 @@
+.form-title{
+    font-size: 20px;
+    margin: 16px 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.form-item-2{
+    display: flex;
+    justify-content: space-between;
+}
+.form-item-2>.form-item{
+    width: 49%;
+    display: flex;
+}
+.cartForm-Box{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+}
+.form-item-input{
+    font-size: 18px;
+    padding: 15px;
+    margin: 8px 0;
+    flex: 1;
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+}
+.form-item-input:focus{
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+}
+.form-item-Msg{
+    padding: 5px 0;
+    flex: 1;
+    color: red;
+}
+.form-link{
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    bottom: 10px;
+    background-color: #00081C;
+    color:#BEBC65;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    border-radius: 2px;
+}
+.form-link:hover{
+    cursor: pointer;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00081C;
+    opacity: 0.4;
+    z-index: 11;
+}
+.completed-cart{
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    right: 30%;
+    bottom: 35%;
+    background-color: white;
+    z-index: 12;
+    font-family: 'Raleway', sans-serif;
+}
+.exitCompleted{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 10;
+    color: white;
+    font-size: 30px;
+}
+.exitCompleted:hover{
+    cursor: pointer;
+}
+.title-completed{
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+.send-completed{
+    margin: 8px;
+    padding: 0 20px;
+    font-size: 20px;
+}
+.link-completed{
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    transition: all ease-in-out 0.3s;
+}
+.link-completed:hover{
+    background-color: #00081C;
+    color: white;
+}
+#completeBill:checked ~ .overlay{
+    display: block;
+}
+#completeBill:checked ~ .completed-cart{
+    display: block;
+}
+/* Mobile Tablet */
+@media (max-width: 1023px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+   
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .form-link{
+        bottom: 7px;
+    }
+    .completed-cart{
+        position: fixed;
+        top: 35%;
+        left: 0%;
+        right: 0%;
+        bottom: 35%;
+       
+    }
+}

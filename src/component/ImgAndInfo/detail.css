@@ -1,0 +1,11 @@
+.detail-container{
+    margin-top: 32px;
+    display: block;
+    width: 100%;
+}
+.title-last{
+    font-size: 18px;
+    margin-top: 16px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}

@@ -1,0 +1,132 @@
+:root{
+    --banner-height: 500px;
+    --height-btn: 30px;
+}
+.banner{
+    display: block;
+    width: 100%;
+    height: var(--banner-height);
+    overflow: hidden;
+    position: relative;
+}
+.banner-item{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.banner-info{
+    position: absolute;
+    z-index: 5;
+    right: 10%;
+    top: 25%;
+    padding: 10px 30px;
+    text-align: center;
+}
+.banner-on-Moblie{
+    display: none;
+  }
+.banner-on-PC{
+display: block;
+}
+.banner-1{
+    font-size: 30px;
+}
+.banner-2{
+    font-size: 50px;
+}
+.banner-3{
+    font-size: 20px;
+}
+.banner-4{
+    margin: 8px 0;
+    display: block;
+    width: 50%;
+    transform: translateX(50%);
+}
+.banner-4>a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    font-weight: lighter;
+}
+.banner-4>a:hover{
+    background-color: #273751;
+    color: white;
+}
+.services-list{
+    display: flex;
+    background-color: #E2F8F8;
+    padding: 15px 20%;
+    justify-content: space-between;
+}
+.service-item{
+    display: block;
+    width: 30%;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.service-link>i{
+    font-size: 22px;
+    font-weight: 700;
+}
+.service-name{
+    margin-left: 5px;
+}
+
+/* Mobile Tablet */
+@media (max-width: 1023px) {
+  .services-list{
+    display: none;
+  }
+}
+  
+  /* Tablet */
+  @media (min-width: 740px) and (max-width: 1023px) {
+    :root{
+      --banner-height: 400px;
+      --height-btn: 30px;
+    }
+    .banner-info{
+      display: block;
+      position: absolute;
+      right: 0%;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 739px) {
+    :root{
+      --banner-height: 500px;
+      --height-btn: 30px;
+    }
+    .banner{
+      display: block;
+      width: 100%;
+      height: var(--banner-height);
+      position: relative;
+      box-shadow: 0 0 3px gray;
+    }
+    .banner-item{
+      display: block;
+      width: 100%;
+      height: 80%;
+    }
+    .banner-info{
+      display: block;
+      position: absolute;
+      top: 60%;
+      right: 0;
+      left: 0;
+      text-align: center;
+    }
+    .banner-on-Moblie{
+      display: block;
+    }
+    .banner-on-PC{
+      display: none;
+    }
+    
+}

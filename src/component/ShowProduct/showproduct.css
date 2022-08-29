@@ -1,0 +1,13 @@
+.show-product{
+    margin: 32px 0;
+    font-family: 'Raleway', sans-serif;
+}
+.show-product-title{
+    font-size: 20px;
+    text-align: center;
+}
+.show-product-important{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
