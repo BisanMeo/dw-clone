@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './nav.css';
 
 const Navbar = () => {
@@ -8,54 +9,54 @@ const Navbar = () => {
             <div className='onPC'>
                 <div className="logo-container">
                     <div className="span"></div>
-                    <a href='/' className="span logo"> DANIEL WALLINGTON</a>
+                    <Link to="/" className="span logo"> DANIEL WALLINGTON</Link>
                     <div className="span cart-wish">
                         <div className="wishlist">
-                            <a href="/search" className="wishlist-item"><i class="fa-thin fa-magnifying-glass"></i></a>
+                            <Link to="/search" className="wishlist-item"><i class="fa-thin fa-magnifying-glass"></i></Link>
                         </div>
                         <div className="cart">
-                            <a href="/cart" className="cart-item"><i class="fa-thin fa-cart-shopping"></i></a>
+                            <Link to="/cart" className="cart-item"><i class="fa-thin fa-cart-shopping"></i></Link>
                         </div>
                     </div>
                 </div>
                 <div className="nav">
                     <ul className="nav-list">
-                        <li className="nav-item"><a href="/" className="nav-link">TRANG CHỦ </a></li>
+                        <li className="nav-item"><Link to="/" className="nav-link">TRANG CHỦ </Link></li>
                         <li className="nav-item">
-                            <a href="/clock" className="nav-link"> ĐỒNG HỒ </a>
+                            <Link to="/clock" className="nav-link"> ĐỒNG HỒ </Link>
                                 <ul className="sub-list">
                                     <li className="sub-item">
-                                        <a href="/clock" className="sub-link">Tất cả đồng hồ</a>
+                                        <Link to="/clock" className="sub-link">Tất cả đồng hồ</Link>
                                     </li>
                                     <li className="sub-item">
-                                        <a href="/clock/men" className="sub-link">Đồng hồ nam</a>
+                                        <Link to="/clock/men" className="sub-link">Đồng hồ nam</Link>
                                     </li>
                                     <li className="sub-item">
-                                        <a href="/clock/women" className="sub-link">Đồng hồ nữ</a>
+                                        <Link to="/clock/women" className="sub-link">Đồng hồ nữ</Link>
                                     </li>
                                 </ul>
                         </li>
                         <li className="nav-item">
-                            <a href="/jewels" className="nav-link">TRANG SỨC </a>
+                            <Link to="/jewels" className="nav-link">TRANG SỨC </Link>
                             <ul className="sub-list">
                                     <li className="sub-item">
-                                        <a href="/jewels" className="sub-link">Tất cả trang sức</a>
+                                        <Link to="/jewels" className="sub-link">Tất cả trang sức</Link>
                                     </li>
                                     <li className="sub-item">
-                                        <a href="/jewels/earrings" className="sub-link">Khuyên tai</a>
+                                        <Link to="/jewels/earrings" className="sub-link">Khuyên tai</Link>
                                     </li>
                                     <li className="sub-item">
-                                        <a href="/jewels/necklage" className="sub-link">Dây chuyền</a>
+                                        <Link to="/jewels/necklage" className="sub-link">Dây chuyền</Link>
                                     </li>
                                     <li className="sub-item">
-                                        <a href="/jewels/bracelet" className="sub-link">Vòng tay</a>
+                                        <Link to="/jewels/bracelet" className="sub-link">Vòng tay</Link>
                                     </li>
                                     <li className="sub-item">
-                                        <a href="/jewels/ring" className="sub-link">Nhẫn</a>
+                                        <Link to="/jewels/ring" className="sub-link">Nhẫn</Link>
                                     </li>
                             </ul>    
                         </li>
-                        <li className="nav-item"><a href="/glass" className="nav-link">KÍNH RÂM </a></li>
+                        <li className="nav-item"><Link to="/glass" className="nav-link">KÍNH RÂM </Link></li>
                     </ul>
                 </div>
             </div>
@@ -76,70 +77,70 @@ const Navbar = () => {
                             </div>
                             <ul className="sidebar-list">
                                 <li className="sidebar-item">
-                                    <a href="/" className="sidebar-link">Trang chủ</a>
+                                    <Link to="/" className="sidebar-link">Trang chủ</Link>
                                 </li>
                                 <li className="sidebar-item">
-                                    <a href="/clock" className="sidebar-link">Đồng hồ</a>
+                                    <Link to="/clock" className="sidebar-link">Đồng hồ</Link>
                                     <ul className="sidebar-sub">
                                         <li className="sidebar-sub-item">
-                                            <a href="/clock" className="sidebar-sub-link">
+                                            <Link to="/clock" className="sidebar-sub-link">
                                                 Tất cả đồng hồ
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="sidebar-sub-item">
-                                            <a href="/clock/men" className="sidebar-sub-link">
+                                            <Link to="/clock/men" className="sidebar-sub-link">
                                                 Đồng hồ Nam
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="sidebar-sub-item">
-                                            <a href="/clock/women" className="sidebar-sub-link">
+                                            <Link to="/clock/women" className="sidebar-sub-link">
                                                 Đồng hồ Nữ
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li className="sidebar-item">
-                                    <a href="/men" className="sidebar-link">Trang sức</a>
+                                    <Link to="/men" className="sidebar-link">Trang sức</Link>
                                     <ul className="sidebar-sub">
                                         <li className="sidebar-sub-item">
-                                            <a href="/jewels" className="sidebar-sub-link">
+                                            <Link to="/jewels" className="sidebar-sub-link">
                                               Tất cả trang sức
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="sidebar-sub-item">
-                                            <a href="/jewels/earrings" className="sidebar-sub-link">
+                                            <Link to="/jewels/earrings" className="sidebar-sub-link">
                                                Khuyên tai
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="sidebar-sub-item">
-                                            <a href="/jewels/necklage" className="sidebar-sub-link">
+                                            <Link to="/jewels/necklage" className="sidebar-sub-link">
                                                Dây chuyền
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="sidebar-sub-item">
-                                            <a href="/jewels/bracelet" className="sidebar-sub-link">
+                                            <Link to="/jewels/bracelet" className="sidebar-sub-link">
                                                Lắc tay
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="sidebar-sub-item">
-                                            <a href="/jewels/ring" className="sidebar-sub-link">
+                                            <Link to="/jewels/ring" className="sidebar-sub-link">
                                               Nhẫn
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li className="sidebar-item">
-                                    <a href="/glass" className="sidebar-link">Kính râm</a>
+                                    <Link to="/glass" className="sidebar-link">Kính râm</Link>
                                 </li>
                                 <li className="sidebar-item">
-                                    <a href="/" className="sidebar-link">Liên hệ</a>
+                                    <Link to="/" className="sidebar-link">Liên hệ</Link>
                                 </li>
                             </ul>
                         </label>
                    </div>
-                    <a href="/home" className="chat-link-mobile"><i class="fa-thin fa-comment"></i></a>
-                    <a href="/search" className="wishlist-link-mobile"><i class="fa-thin fa-magnifying-glass"></i></a>
-                    <a href="/cart" className="cart-link-mobile"><i class="fa-thin fa-cart-shopping"></i></a>
+                    <Link to="/home" className="chat-link-mobile"><i class="fa-thin fa-comment"></i></Link>
+                    <Link to="/search" className="wishlist-link-mobile"><i class="fa-thin fa-magnifying-glass"></i></Link>
+                    <Link to="/cart" className="cart-link-mobile"><i class="fa-thin fa-cart-shopping"></i></Link>
                 </div>
             </div>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import ToCart from '../Product/toCart';
 import './product.css';
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from 'react-router-dom';
 
 function Product({product}) {
     
@@ -57,7 +58,7 @@ function Product({product}) {
 
  
     return (
-        <a href={`/detail/${product.id}`} className='product-container' idPro={product.id}>
+        <Link to={`/detail/${product.id}`} className='product-container' idPro={product.id}>
            <div className="product-img">
                 <img src={product.img} alt="" className="product-img-item"/>
                 <div className="product-btns">
@@ -72,7 +73,7 @@ function Product({product}) {
                 <p className="product-price" price={product.price}>{price} VND</p>
            </div>
            <ToCart/>
-        </a>
+        </Link>
     );
 }
 

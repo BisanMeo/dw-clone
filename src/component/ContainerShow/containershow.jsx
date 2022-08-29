@@ -34,8 +34,6 @@ const Containershow = ({arr}) => {
     let colorFiltered = [];
     let strapFiltered = [];
     const handelFilter = () =>{
-        console.log('List màu: ',colorList);
-        console.log('List dây: ',strapList);
         if(colorList.length === 0){
             colorFiltered = arr;
         }else{
@@ -50,7 +48,6 @@ const Containershow = ({arr}) => {
                 }
             })
         })
-        console.log('Filter màu: ',colorFiltered);
         // Filter Dây
         if(strapList.length === 0){
             strapFiltered = colorFiltered;

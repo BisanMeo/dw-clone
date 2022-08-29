@@ -93,9 +93,7 @@ const ContainerGlass = ({arr}) => {
                 }
             })
         })
-        console.log('Filter vật liệu: ',matirialFiltered);
         setArrShow(matirialFiltered);
-        console.log('Mảng cần show: ',arrShow);
          // Đóng slider
          document.getElementById('filter').checked = false;
     }

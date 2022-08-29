@@ -10,6 +10,8 @@ const SearchContainer = () => {
     const [arrShow, setArrShow] = useState([]);
     const handelChange = (e) =>{
         let value = e.target.value;
+        console.log(value);
+        console.log(param);
         value = value.toLowerCase();
         setParam(value);
         let allData = [];
@@ -19,7 +21,7 @@ const SearchContainer = () => {
         }
         const searchValue = [];
         allData.map( item => {
-            if( item['name'].includes(param)){
+            if( item['name'].includes(value)){
                 searchValue.push(item.id);
             }
         })

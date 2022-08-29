@@ -2,6 +2,8 @@ import { useFormik } from 'formik';
 import React from 'react';
 import * as Yup from 'yup';
 import './cartForm.css';
+import { Link } from 'react-router-dom';
+
 const CartForm = () => {
     let nonTran = localStorage.getItem('sumMoney');
     let money = JSON.parse(nonTran);
@@ -118,7 +120,7 @@ const CartForm = () => {
                 <p className="title-completed"> Đặt hàng thành công </p>
                 <p className="send-completed"> Cảm ơn bạn đã đặt hàng, {formik.values.lastName} {formik.values.fisrtName}!!!</p>
                 <p className="send-completed"> Vui lòng chuẩn bị {money} khi chúng tôi giao hàng!!!</p>
-                <a href="/" className="link-completed">Trở về trang chủ</a>
+                <Link to="/" className="link-completed">Trở về trang chủ</Link>
             </label>
         </>
     );
